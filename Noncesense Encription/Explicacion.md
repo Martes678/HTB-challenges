@@ -13,7 +13,8 @@ En server.py, script donde se implementa el cómo se cifra una cadena de caráct
 Una vez conocidas las vulnerabilidades del cómo se crea la key y el cómo se cifra el mensaje, se crea un script que explota las vulnerabilidades anteriormente nombradas. <br>
 Para ello se usan diferentes funciones: <br>
 &emsp;-invert_base_key(): <br>
-&emsp;&emsp;Esta función invierte la función de __gen_key() server.py, que revierte las operaciones XOR y desplazamientos hechos en la función de server.py. <br>
+&emsp;&emsp;Esta función invierte la función __gen_key() de server.py.
+&emsp;&emsp;Por lo tanto,  revierte las operaciones XOR y desplazamientos hechos en la encripación. <br>
 &emsp;-crt_combine(): <br>
 &emsp;&emsp;Esta función es la que permite mediante los residuos obtener el nonce y base_key mediante el teorema del resto chino.  
 &emsp;&emsp;Como se conoce base_key y nonce, se puede descifrar el mesaje. <br>
