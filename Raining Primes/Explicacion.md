@@ -6,9 +6,9 @@ Para poder descifrar el mensaje, hay que analizar el script server.py, el cual r
 &emsp;-Cifrar la Flag con cifrado AES y RSA <br>
 &emsp;&emsp;La Flag es cifrada con cifrado AES y posteriormente con cifrado RSA <br>
 &emsp;-Actualizar clave AES <br>
-&emsp;&emsp;Permite forzar la clave AES a 0 <br>
+&emsp;&emsp;La opción 2 permite forzar la clave AES a 0 <br>
 &emsp;-Obtener el mansaje con los valores de RSA, opción 3 <br>
-&emsp;&emsp;La opción 2, da los valores del módulo, el exponente y el mensaje cifrado. <br>
+&emsp;&emsp;La opción 3, da los valores del módulo, el exponente y el mensaje cifrado. <br>
 
 Una vez entendido el funcionamiento de server.py, se realiza solve.py, en donde: <br>
 &emsp; 1. Haz que obtener el valor de _r_ de la generación de números primos. <br>
